@@ -32,8 +32,11 @@ The dataset includes the following features:
 - Feature scaling and preprocessing.  
 - Model training (Random Forest, XGBoost, etc.).  
 - Evaluate performance (accuracy, F1-score, confusion matrix).
+
 #week-2
-- ⚙️ Workflow
+
+⚙️ Workflow
+
 1️⃣ Importing Libraries
 
 We use Python libraries like:
