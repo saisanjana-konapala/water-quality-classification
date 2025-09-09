@@ -36,7 +36,6 @@ The dataset includes the following features:
 #week-2
 
 ⚙️ Workflow
-
 1️⃣ Importing Libraries
 
 We use Python libraries like:
@@ -101,8 +100,8 @@ Implemented multiple models to check which one is best.
 
 Added attractive dark theme visualizations for accuracy & confusion matrix.
 
+Wrote a clean README.md for better understanding.
 
-## 📖 How to Run
-1. Clone this repository:  
-   bash
-   git clone https://github.com/saisanjana-konapala/water-quality-classification.git
+👉 Now it’s cleaner and only focused on Random Forest + core ML workflow.
+
+Do you also want me to add an "Outputs" section in the README with sample plots (accuracy bar + confusion matrix) so viewers immediately see results when visiting your repo?
