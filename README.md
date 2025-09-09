@@ -35,7 +35,8 @@ The dataset includes the following features:
 
 #week-2
 
-⚙️ Workflow
+## ⚙️ Workflow
+
 1️⃣ Importing Libraries
 
 We use Python libraries like:
@@ -78,7 +79,7 @@ Evaluated performance using:
 
 Created attractive visuals (bar charts, dark-theme confusion matrix).
 
-📈 Results
+## 📈 Results
 
 Best Model: Random Forest Classifier 🌳
 
@@ -86,13 +87,13 @@ Accuracy Achieved: ~72–76%
 
 The model performs better at detecting Not Potable (unsafe) water than Potable water.
 
-🔮 Next Steps
+## 🔮 Next Steps
 
 Improve accuracy with feature engineering and hyperparameter tuning.
 
 Balance dataset using oversampling (SMOTE) or class weights.
 
-👩‍💻 Improvisations Done
+## 👩‍💻 Improvisations Done
 
 Organized workflow into clear steps (import → explore → model → evaluate).
 
@@ -102,6 +103,3 @@ Added attractive dark theme visualizations for accuracy & confusion matrix.
 
 Wrote a clean README.md for better understanding.
 
-👉 Now it’s cleaner and only focused on Random Forest + core ML workflow.
-
-Do you also want me to add an "Outputs" section in the README with sample plots (accuracy bar + confusion matrix) so viewers immediately see results when visiting your repo?
