@@ -1,105 +1,73 @@
-# Water Quality Classification using Machine Learning
-#week-1
+# 💧 Water Quality Classification using Machine Learning
+
 ## 📌 Project Overview
-This project applies **AI/ML techniques** to classify water as **potable (safe to drink)** or **not potable** based on water quality parameters.  
-The dataset is taken from the [Kaggle Water Potability Dataset](https://www.kaggle.com/datasets/adityakadiwal/water-potability).
+This project aims to classify **water quality** as **potable (safe to drink)** or **not potable** using machine learning models.  
+We implemented and compared three models:
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
 
-## 📂 Files in Repository
-- Water_Quality_EDA.ipynb → Jupyter Notebook with data loading.
-- water_potability.csv → Dataset (9 water quality features + target).
-- README.md → Project documentation.
+Dataset used: **Water Potability Dataset (Kaggle)**  
 
-## 🧪 Dataset Details
-The dataset includes the following features:
-- pH  
-- Hardness  
-- Solids  
-- Chloramines  
-- Sulfate  
-- Conductivity 
-- Organic_carbon  
-- Trihalomethanes 
-- Turbidity  
-- Potability (target: 0 = Not potable, 1 = Potable)
+---
 
-## ⚙️ Steps Completed
-1. Imported necessary libraries.  
-2. Loaded dataset from CSV.  
-3. Performed exploratory analysis using .info(), .describe(), and .isnull().sum() to check missing values.
+## 🎯 Learning Objectives
+- Understand the process of **data preprocessing** (handling missing values).  
+- Implement multiple ML algorithms and compare results.  
+- Evaluate models using **accuracy and confusion matrix**.  
+- Visualize performance with attractive plots.  
+- Identify the **best performing model** for water quality classification.  
 
-## 🚀 Next Steps
-- Handle missing values.  
-- Feature scaling and preprocessing.  
-- Model training (Random Forest, XGBoost, etc.).  
-- Evaluate performance (accuracy, F1-score, confusion matrix).
+---
 
-#week-2
+## 🛠 Tools & Technology Used
+- **Programming Language**: Python  
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
+- **Models**: Logistic Regression, Decision Tree, Random Forest  
+- **Platform**: Jupyter Notebook / Anaconda  
+- **Dataset Source**: Kaggle  
 
-## ⚙️ Workflow
+---
 
-1️⃣ Importing Libraries
+## 🔍 Methodology
+1. **Data Collection**: Downloaded dataset from Kaggle.  
+2. **Preprocessing**: Handled missing values using median imputation.  
+3. **Model Building**:  
+   - Logistic Regression  
+   - Decision Tree Classifier  
+   - Random Forest Classifier  
+4. **Evaluation**: Checked accuracy, confusion matrix, and visualizations.  
+5. **Comparison**: Selected the best-performing model.  
 
-We use Python libraries like:
+---
 
-pandas, numpy → Data handling
+## 📊 Results
 
-matplotlib, seaborn → Visualizations
+### ✅ Accuracy Comparison
+| Model                | Accuracy (%) |
+|-----------------------|--------------|
+| Logistic Regression   | ~65–70%      |
+| Decision Tree         | ~68–74%      |
+| Random Forest         | ~72–76%      |
 
-scikit-learn → ML model building
+### 🔹 Observations
+- Logistic Regression worked as a **baseline model**.  
+- Decision Tree performed better but was prone to **overfitting**.  
+- Random Forest gave the **highest accuracy** and most stable performance.  
 
-2️⃣ Data Loading & Exploration
+---
 
-Loaded dataset into a Pandas DataFrame.
+## 🎨 Visualizations
+- Accuracy Bar Charts (for each model).  
+- Confusion Matrix Heatmaps.  
+- Comparison plots to interpret results.  
 
-Checked missing values and handled them with median imputation.
+---
 
-Explored dataset using .info(), .describe(), .isnull().sum().
+## ✅ Conclusion
+- **Random Forest Classifier** is the most suitable model for this dataset.  
+- It balances accuracy, robustness, and interpretability.  
+- Logistic Regression and Decision Tree were useful for comparison.  
+- This project demonstrates how ML can help in **automated water quality classification** and support **public health decisions**.  
 
-3️⃣ Model Selection (Rectification Step)
-
-Compared several models (Logistic Regression, Decision Tree, Random Forest).
-
-Found that Random Forest Classifier performed the best in terms of accuracy and balance between classes.
-
-4️⃣ Model Implementation
-
-Trained Random Forest using train-test split (80-20).
-
-Tuned hyperparameters for better performance.
-
-5️⃣ Evaluation
-
-Evaluated performance using:
-
-✅ Accuracy Score
-
-✅ Classification Report (Precision, Recall, F1-score)
-
-✅ Confusion Matrix Heatmap
-
-Created attractive visuals (bar charts, dark-theme confusion matrix).
-
-## 📈 Results
-
-Best Model: Random Forest Classifier 🌳
-
-Accuracy Achieved: ~72–76%
-
-The model performs better at detecting Not Potable (unsafe) water than Potable water.
-
-## 🔮 Next Steps
-
-Improve accuracy with feature engineering and hyperparameter tuning.
-
-Balance dataset using oversampling (SMOTE) or class weights.
-
-## 👩‍💻 Improvisations Done
-
-Organized workflow into clear steps (import → explore → model → evaluate).
-
-Implemented multiple models to check which one is best.
-
-Added attractive dark theme visualizations for accuracy & confusion matrix.
-
-Wrote a clean README.md for better understanding.
-
+---
